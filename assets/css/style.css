@@ -46,14 +46,15 @@ a.primary-button {
     border-radius: 6px;
     text-decoration: none;
     line-height: 1.3;
-    transition-duration:500ms;
+    transition-duration: 500ms;
     transition-property: all;
     transition-timing-function: linear;
+    width: fit-content;
 }
 
 a.primary-button:hover {
-background-color: var(--title-text-color);
-color: var(--primary-color);
+    background-color: var(--title-text-color);
+    color: var(--primary-color);
 }
 
 
@@ -92,7 +93,7 @@ color: var(--primary-color);
     position: relative;
 }
 
-.header-container>nav>ul>li:hover ul  {
+.header-container>nav>ul>li:hover ul {
     display: block;
     position: absolute;
     background-color: white;
@@ -113,3 +114,60 @@ color: var(--primary-color);
 
 
 /* END HEADER */
+
+/* Start hero section */
+.hero-row {
+    background-color: var(--light-color);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 60%;
+    flex-grow: 2;
+    flex-wrap: wrap;
+}
+
+.hero-content h6 {
+    background-image: url(../css/images/orangeDot.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+.hero-container h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-content h2 span {
+    color: var(--primary-color);
+
+}
+
+
+.hero-content p {
+
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.hero-banner {
+    flex-basis: 40%;
+}
+
+.hero-banner img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* end hero section */
